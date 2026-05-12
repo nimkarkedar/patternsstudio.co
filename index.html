@@ -3,8 +3,63 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kedar Nimkar</title>
-<meta name="description" content="Kedar Nimkar — 20 years building digital products. Independent. Fractional. Based in Singapore." />
+<title>Kedar Nimkar. Helping companies build better products.</title>
+<meta name="description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
+<meta name="keywords" content="Designer, Design Leader, Singapore, BookMyShow, Cleartrip, Jupiter, PropertyGuru, The Gyaan Project, Podcaster" />
+<meta name="author" content="Kedar Nimkar" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="shortcut icon" href="favicon.png" />
+<meta name="theme-color" content="#e54a3a" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="dhamaKedar" />
+<meta property="og:title" content="Kedar Nimkar. Helping companies build better products." />
+<meta property="og:description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
+<meta property="og:url" content="https://dhamakedar.com/" />
+<meta property="og:image" content="https://dhamakedar.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kedar Nimkar — dhamaKedar" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@nimkarkedar" />
+<meta name="twitter:creator" content="@nimkarkedar" />
+<meta name="twitter:title" content="Kedar Nimkar. Helping companies build better products." />
+<meta name="twitter:description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
+<meta name="twitter:image" content="https://dhamakedar.com/og-image.png" />
+
+<link rel="canonical" href="https://dhamakedar.com/" />
+
+<!-- Person schema for Google knowledge panel -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kedar Nimkar",
+  "url": "https://dhamakedar.com/",
+  "image": "https://dhamakedar.com/og-image.png",
+  "jobTitle": "Independent Product and Design Consultant",
+  "description": "Kedar Nimkar is an independent product and design consultant based in Singapore, helping companies go from 0 to 1 to 10.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Singapore",
+    "addressCountry": "SG"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/nimkarkedar/",
+    "https://twitter.com/nimkarkedar",
+    "https://www.youtube.com/@thegyaanproject",
+    "https://nimkarkedar.com",
+    "https://www.thegyaanproject.com",
+    "https://asktgp.com"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,9 +77,9 @@
     color:var(--ink);
     font-family:'Work Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight:600;
-    font-size:32px;
-    line-height:1.35;
-    letter-spacing:-.015em;
+    font-size:24px;
+    line-height:1.4;
+    letter-spacing:-.01em;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-rendering:optimizeLegibility;
@@ -97,7 +152,7 @@
   /* Instagram-style gradient text for company links */
   a.grad{
     font-weight:800;
-    background-image:linear-gradient(115deg,#ff8a6b 0%,#f04f3a 25%,#d83a2a 50%,#a8221a 75%,#ff6a4f 100%);
+    background-image:linear-gradient(115deg,#ffb199 0%,#ff7a55 25%,#ff4a2e 50%,#ff2d1f 75%,#ff8a6b 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -141,9 +196,9 @@
     align-items:center;
     gap:20px;
     font-weight:700;
-    font-size:32px;
-    line-height:1.25;
-    letter-spacing:-.02em;
+    font-size:24px;
+    line-height:1.3;
+    letter-spacing:-.015em;
     color:var(--ink);
     padding:4px 0;
     user-select:none;
@@ -181,13 +236,43 @@
     margin:0;
   }
   details ul li{
-    padding:12px 0;
-    line-height:1.35;
+    padding:10px 0;
+    line-height:1.4;
     color:var(--ink);
     font-weight:500;
-    font-size:32px;
-    letter-spacing:-.015em;
+    font-size:24px;
+    letter-spacing:-.01em;
   }
+
+  /* Quotes list */
+  details ul.quotes{
+    list-style:none;
+    padding-left:0;
+  }
+  details ul.quotes li{
+    display:block;
+    padding:14px 0;
+  }
+  details ul.quotes li::marker{content:""}
+  details ul.quotes .q{
+    display:block;
+    font-weight:700;
+    font-size:24px;
+    line-height:1.3;
+    letter-spacing:-.015em;
+    color:var(--ink);
+  }
+  details ul.quotes .by{
+    display:block;
+    margin-top:4px;
+    font-style:italic;
+    font-weight:500;
+    font-size:24px;
+    line-height:1.35;
+    color:var(--ink);
+    letter-spacing:-.01em;
+  }
+  details ul.quotes .by a{font-weight:500}
   details ul li::marker{color:var(--muted)}
 
   /* Smooth open */
@@ -257,7 +342,7 @@
 
     <p>
       I’ve led teams at <a class="grad" href="https://www.cleartrip.com" target="_blank" rel="noopener noreferrer">Cleartrip</a>, <a class="grad" href="https://in.bookmyshow.com" target="_blank" rel="noopener noreferrer">BookMyShow</a>, <a class="grad" href="https://jupiter.money" target="_blank" rel="noopener noreferrer">Jupiter</a>, and <a class="grad" href="https://www.propertyguru.com.sg" target="_blank" rel="noopener noreferrer">PropertyGuru</a> in Singapore.<br/>
-      I am a mentor for startups at National University of Singapore for <a class="grad" href="https://enterprise.nus.edu.sg/supporting-entrepreneurs/block71-global-incubation/" target="_blank" rel="noopener noreferrer">BLOCK71</a>.
+      I am a mentor for startups at National University of Singapore for <a class="grad" href="https://enterprise.nus.edu.sg/supporting-entrepreneurs/block71-global-incubation/" target="_blank" rel="noopener noreferrer">BLOCK71</a>. I am knowledge partner for <a class="grad" href="https://www.indiafutureslab.com/getting-started" target="_blank" rel="noopener noreferrer">India Futures Lab</a>, a micro-university based in Goa.
     </p>
 
     <p>
@@ -269,19 +354,57 @@
     </p>
 
     <p>
-      If you got something interesting, <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">lets chat</a> or in person (if you are in Singapore)
+      If you got something interesting, <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">lets chat</a> or meet in person (if you are in Singapore)
     </p>
 
     <hr/>
 
     <details>
-      <summary>How can I help <span class="icon" aria-hidden="true"></span></summary>
+      <summary>How can I help (and have helped) <span class="icon" aria-hidden="true"></span></summary>
       <div class="panel">
         <ul>
           <li>Grow revenue through better product experiences (<a href="https://www.nimkarkedar.com/p/lead-management-for-agents-from-propertyguru" target="_blank" rel="noopener noreferrer">Lead Management for Agents</a>)</li>
           <li>Increase discovery, adoption and engagement of your features (<a href="https://www.nimkarkedar.com/p/pots-on-jupiter-designed-to-save" target="_blank" rel="noopener noreferrer">Built POTs for Jupiter.Money</a>)</li>
           <li>Build new businesses from scratch (<a href="https://www.nimkarkedar.com/p/bms-reimagined" target="_blank" rel="noopener noreferrer">Reimagining BookMyShow: From Ticketing Giant to Entertainment Powerhouse</a>)</li>
           <li>Improve the taste level of your team, product, and communication (<a href="https://www.nimkarkedar.com/p/designing-for-scale-how-we-built" target="_blank" rel="noopener noreferrer">Built PropertyGuru’s HIVE System</a>)</li>
+        </ul>
+      </div>
+    </details>
+
+    <hr/>
+
+    <details>
+      <summary>What people say about me <span class="icon" aria-hidden="true"></span></summary>
+      <div class="panel">
+        <ul class="quotes">
+          <li>
+            <span class="q">“Excellent storyteller”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/guptajiten/" target="_blank" rel="noopener noreferrer">Jiten Gupta</a> (Founder of Jupiter.Money)</span>
+          </li>
+          <li>
+            <span class="q">“Impatient doer”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/andrewmcglinchey/" target="_blank" rel="noopener noreferrer">Andrew McGlinchey</a> (VP of Product at PropertyGuru)</span>
+          </li>
+          <li>
+            <span class="q">“No-nonsense guy”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/subsharma/" target="_blank" rel="noopener noreferrer">Subramanya Sharma</a> (Co-founder of Lumos labs)</span>
+          </li>
+          <li>
+            <span class="q">“Highly dependable”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/rahoolgadkari/" target="_blank" rel="noopener noreferrer">Rahool Gadkari</a> (Co-founder Neufin)</span>
+          </li>
+          <li>
+            <span class="q">“Gets things done or does it himself”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/yashbelavadi/" target="_blank" rel="noopener noreferrer">Yash Belvadi</a> (Co-founder Surge.Credit)</span>
+          </li>
+          <li>
+            <span class="q">“Excellent craftsman”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/jeremy-n-williams/" target="_blank" rel="noopener noreferrer">Jeremy Williams</a> (MD of PropertyGuru)</span>
+          </li>
+          <li>
+            <span class="q">“Guy with high standards and ethics”</span>
+            <span class="by"><a href="https://www.linkedin.com/in/linktonishant/" target="_blank" rel="noopener noreferrer">Nishant Chaudhary</a> (Product Leader at Microsoft and Intuit)</span>
+          </li>
         </ul>
       </div>
     </details>
