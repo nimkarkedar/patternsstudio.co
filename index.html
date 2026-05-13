@@ -132,6 +132,30 @@
     letter-spacing:-.01em;
   }
 
+  /* Section title (non-accordion heading, matches accordion summary type) */
+  h2.section-title{
+    margin:0 0 22px;
+    font-weight:700;
+    font-size:24px;
+    line-height:1.3;
+    letter-spacing:-.015em;
+    color:var(--ink);
+  }
+  ul.plain{
+    list-style:disc;
+    padding-left:28px;
+    margin:0 0 32px;
+  }
+  ul.plain li{
+    padding:10px 0;
+    line-height:1.4;
+    color:var(--ink);
+    font-weight:500;
+    font-size:24px;
+    letter-spacing:-.01em;
+  }
+  ul.plain li::marker{color:var(--muted)}
+
   p{margin:0 0 32px;font-weight:500}
   p.intro{font-weight:500}
   p a, details li a{font-weight:700}
@@ -180,13 +204,20 @@
   hr{
     border:none;
     border-top:1px solid var(--rule);
-    margin:30px 0;
+    margin:20px 0;
   }
 
   /* Accordions */
   details{
     border:none;
-    padding:0;
+    border-radius:10px;
+    padding:8px 18px;
+    margin:0 -18px;
+    transition:background-color .25s ease;
+  }
+  details[open]{
+    background:#181818;
+    padding-bottom:18px;
   }
   details summary{
     list-style:none;
@@ -208,9 +239,10 @@
     width:24px;height:24px;
     position:relative;
     flex:0 0 24px;
-    opacity:.85;
-    transition:transform .25s ease;
+    opacity:.5;
+    transition:transform .25s ease, opacity .15s ease;
   }
+  details summary:hover .icon{opacity:.85}
   details summary .icon::before,
   details summary .icon::after{
     content:"";
@@ -218,11 +250,12 @@
     background:var(--ink);
     border-radius:1px;
   }
+  /* 80% of width with 2px stroke = visual reduction of ~20% while hit area stays 24x24 */
   details summary .icon::before{
-    left:0;right:0;top:50%;height:2px;margin-top:-1px;
+    left:10%;right:10%;top:50%;height:2px;margin-top:-1px;
   }
   details summary .icon::after{
-    top:0;bottom:0;left:50%;width:2px;margin-left:-1px;
+    top:10%;bottom:10%;left:50%;width:2px;margin-left:-1px;
     transition:transform .25s ease;
   }
   details[open] summary .icon::after{transform:scaleY(0)}
@@ -239,10 +272,11 @@
     padding:10px 0;
     line-height:1.4;
     color:var(--ink);
-    font-weight:500;
+    font-weight:400;
     font-size:24px;
     letter-spacing:-.01em;
   }
+  details ul li a{font-weight:400}
 
   /* Quotes list */
   details ul.quotes{
@@ -266,13 +300,13 @@
     display:block;
     margin-top:4px;
     font-style:italic;
-    font-weight:500;
+    font-weight:400;
     font-size:24px;
     line-height:1.35;
     color:var(--ink);
     letter-spacing:-.01em;
   }
-  details ul.quotes .by a{font-weight:500}
+  details ul.quotes .by a{font-weight:400}
   details ul li::marker{color:var(--muted)}
 
   /* Smooth open */
@@ -319,8 +353,10 @@
     details ul li{font-size:20px;padding:8px 0}
     details ul.quotes .q,
     details ul.quotes .by{font-size:20px}
+    h2.section-title{font-size:20px}
+    ul.plain li{font-size:20px;padding:8px 0}
     p{margin-bottom:26px}
-    hr{margin:34px 0}
+    hr{margin:10px 0}
   }
 </style>
 </head>
@@ -338,12 +374,35 @@
     </header>
 
     <p class="intro">
-      Hello. I’m Kedar in <a href="https://en.wiktionary.org/wiki/%E0%A4%A7%E0%A4%AE%E0%A4%BE%E0%A4%95%E0%A5%87%E0%A4%A6%E0%A4%BE%E0%A4%B0" target="_blank" rel="noopener noreferrer">dhamaKedar</a>.<br/>
+      Hello. I’m Kedar in <a href="https://en.wiktionary.org/wiki/%E0%A4%A7%E0%A4%AE%E0%A4%BE%E0%A4%95%E0%A5%87%E0%A4%A6%E0%A4%BE%E0%A4%B0" target="_blank" rel="noopener noreferrer">dhamaKedar</a>.
+    </p>
+
+    <hr/>
+
+    <details>
+      <summary>Here’s how I can help <span class="icon" aria-hidden="true"></span></summary>
+      <div class="panel">
+        <ul>
+          <li>Grow your revenue through better product experiences (Elevate product)</li>
+          <li>Increase discovery, adoption and engagement of your features (Product Marketing)</li>
+          <li>Test MVPs and build businesses from scratch (Design)</li>
+          <li>Improve the taste level of your team, product, and communication (Mentor)</li>
+          <li>Empower your design teams to use AI tools (Upskill)</li>
+        </ul>
+      </div>
+    </details>
+
+    <hr/>
+
+    <p>
       I’ve spent the last 20 years building digital products across travel, entertainment, banking, and real estate. I’ve helped companies grow revenue, simplify complexity, scale teams, and make products people actually want to use.
     </p>
 
     <p>
-      I’ve led teams at <a class="grad" href="https://www.cleartrip.com" target="_blank" rel="noopener noreferrer">Cleartrip</a>, <a class="grad" href="https://in.bookmyshow.com" target="_blank" rel="noopener noreferrer">BookMyShow</a>, <a class="grad" href="https://jupiter.money" target="_blank" rel="noopener noreferrer">Jupiter</a>, and <a class="grad" href="https://www.propertyguru.com.sg" target="_blank" rel="noopener noreferrer">PropertyGuru</a> in Singapore.<br/>
+      I’ve led teams at <a class="grad" href="https://www.cleartrip.com" target="_blank" rel="noopener noreferrer">Cleartrip</a>, <a class="grad" href="https://in.bookmyshow.com" target="_blank" rel="noopener noreferrer">BookMyShow</a>, <a class="grad" href="https://jupiter.money" target="_blank" rel="noopener noreferrer">Jupiter</a>, and <a class="grad" href="https://www.propertyguru.com.sg" target="_blank" rel="noopener noreferrer">PropertyGuru</a> in Singapore.
+    </p>
+
+    <p>
       I am a mentor for startups at National University of Singapore for <a class="grad" href="https://enterprise.nus.edu.sg/supporting-entrepreneurs/block71-global-incubation/" target="_blank" rel="noopener noreferrer">BLOCK71</a> and a knowledge partner for <a class="grad" href="https://www.indiafutureslab.com/getting-started" target="_blank" rel="noopener noreferrer">India Futures Lab</a>, a micro-university based in Goa.
     </p>
 
@@ -351,24 +410,18 @@
       Now, I work with a small number of select clients. Independently. Fractional. Unlike traditional design consulting. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10. After that it’s just meetings and… (you know what I mean)
     </p>
 
-    <p>
-      You can explore my work here (<a href="https://nimkarkedar.com">nimkarkedar.com</a>) and more details on how I can help are below.
-    </p>
-
-    <p>
-      If you got something interesting, <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">lets chat</a> or meet in person (if you are in Singapore)
-    </p>
-
     <hr/>
 
     <details>
-      <summary>How can I help (and have helped) <span class="icon" aria-hidden="true"></span></summary>
+      <summary>How I have done in the past <span class="icon" aria-hidden="true"></span></summary>
       <div class="panel">
         <ul>
-          <li>Grow revenue through better product experiences (<a href="https://www.nimkarkedar.com/p/lead-management-for-agents-from-propertyguru" target="_blank" rel="noopener noreferrer">Lead Management for Agents</a>)</li>
-          <li>Increase discovery, adoption and engagement of your features (<a href="https://www.nimkarkedar.com/p/pots-on-jupiter-designed-to-save" target="_blank" rel="noopener noreferrer">Built POTs for Jupiter.Money</a>)</li>
-          <li>Build new businesses from scratch (<a href="https://www.nimkarkedar.com/p/bms-reimagined" target="_blank" rel="noopener noreferrer">Reimagining BookMyShow: From Ticketing Giant to Entertainment Powerhouse</a>)</li>
-          <li>Improve the taste level of your team, product, and communication (<a href="https://www.nimkarkedar.com/p/designing-for-scale-how-we-built" target="_blank" rel="noopener noreferrer">Built PropertyGuru’s HIVE System</a>)</li>
+          <li><a href="https://www.nimkarkedar.com/p/pots-on-jupiter-designed-to-save" target="_blank" rel="noopener noreferrer">Reimagined Fixed Deposits that resulted in 23% more savings per account.</a></li>
+          <li><a href="https://www.nimkarkedar.com/p/300-growth-in-ratings-and-review" target="_blank" rel="noopener noreferrer">300% growth in ratings and review through pure design</a></li>
+          <li><a href="https://www.nimkarkedar.com/p/designing-for-scale-the-evolution" target="_blank" rel="noopener noreferrer">Reduces Jupiter’s Debit Card delivery time from 7 days to 2 days</a></li>
+          <li><a href="https://in.bookmyshow.com/list-your-show" target="_blank" rel="noopener noreferrer">Built ListMyShow to reduce event onboarding from 4 days to 15 mins</a></li>
+          <li><a href="https://www.nimkarkedar.com/p/bms-reimagined" target="_blank" rel="noopener noreferrer">Transformed BookMyShow from ticketing giant to Entertainment Powerhouse</a></li>
+          <li><a href="https://www.nimkarkedar.com/p/designing-for-scale-how-we-built" target="_blank" rel="noopener noreferrer">Built a multi-brand, multilingual WCAG compliant design system for 4 geographies</a></li>
         </ul>
       </div>
     </details>
@@ -376,7 +429,7 @@
     <hr/>
 
     <details>
-      <summary>What people say about me <span class="icon" aria-hidden="true"></span></summary>
+      <summary>What people say about me? <span class="icon" aria-hidden="true"></span></summary>
       <div class="panel">
         <ul class="quotes">
           <li>
@@ -417,7 +470,7 @@
       <summary>I work best with anyone who… <span class="icon" aria-hidden="true"></span></summary>
       <div class="panel">
         <ul>
-          <li>Care deeply about craft</li>
+          <li>Care deeply about craft &amp; design</li>
           <li>Sweat the details</li>
           <li>Want to build something useful, meaningful, and commercially solid</li>
           <li>Understand that brand, product, business, and culture are all connected</li>
@@ -448,7 +501,7 @@
     </p>
 
     <p class="closing">
-      <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">Let’s connect</a> if the vibe matches.
+      You can explore all my work at <a href="https://nimkarkedar.com" target="_blank" rel="noopener noreferrer">nimkarkedar.com</a>. <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">Let’s connect</a> if the vibe matches.
     </p>
 
     <footer class="site-foot">
