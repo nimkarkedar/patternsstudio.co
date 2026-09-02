@@ -3,37 +3,37 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kedar Nimkar. Helping companies build better products.</title>
-<meta name="description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
-<meta name="keywords" content="Designer, Design Leader, Singapore, BookMyShow, Cleartrip, Jupiter, PropertyGuru, The Gyaan Project, Podcaster" />
+<title>Patterns Studio | Product, Design and Digital Consulting</title>
+<meta name="description" content="Patterns Studio is a product and design studio helping businesses turn complex problems into thoughtful digital products, brands and experiences." />
+<meta name="keywords" content="Designer, Design Leader, Singapore, Patterns Studio, BookMyShow, Cleartrip, Jupiter, PropertyGuru, The Gyaan Project, Podcaster" />
 <meta name="author" content="Kedar Nimkar" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="shortcut icon" href="favicon.png" />
-<meta name="theme-color" content="#e54a3a" />
+<meta name="theme-color" content="#2B18D7" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="dhamaKedar" />
-<meta property="og:title" content="Kedar Nimkar. Helping companies build better products." />
-<meta property="og:description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
-<meta property="og:url" content="https://dhamakedar.com/" />
-<meta property="og:image" content="https://dhamakedar.com/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Kedar Nimkar — dhamaKedar" />
+<meta property="og:site_name" content="Patterns Studio" />
+<meta property="og:title" content="Patterns Studio | Product, Design and Digital Consulting" />
+<meta property="og:description" content="Patterns Studio is a product and design studio helping businesses turn complex problems into thoughtful digital products, brands and experiences." />
+<meta property="og:url" content="https://patternsstudio.co/" />
+<meta property="og:image" content="https://patternsstudio.co/Open-graph-patterns.png" />
+<meta property="og:image:width" content="4800" />
+<meta property="og:image:height" content="2520" />
+<meta property="og:image:alt" content="Kedar Nimkar — Patterns Studio" />
 <meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@nimkarkedar" />
 <meta name="twitter:creator" content="@nimkarkedar" />
-<meta name="twitter:title" content="Kedar Nimkar. Helping companies build better products." />
-<meta name="twitter:description" content="Independent Design Leader. I work with a select few clients. I enjoy helping companies go from 0 to 1. Sometimes 1 to 10." />
-<meta name="twitter:image" content="https://dhamakedar.com/og-image.png" />
+<meta name="twitter:title" content="Patterns Studio | Product, Design and Digital Consulting" />
+<meta name="twitter:description" content="Patterns Studio is a product and design studio helping businesses turn complex problems into thoughtful digital products, brands and experiences." />
+<meta name="twitter:image" content="https://patternsstudio.co/Open-graph-patterns.png" />
 
-<link rel="canonical" href="https://dhamakedar.com/" />
+<link rel="canonical" href="https://patternsstudio.co/" />
 
 <!-- Person schema for Google knowledge panel -->
 <script type="application/ld+json">
@@ -41,8 +41,8 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Kedar Nimkar",
-  "url": "https://dhamakedar.com/",
-  "image": "https://dhamakedar.com/og-image.png",
+  "url": "https://patternsstudio.co/",
+  "image": "https://patternsstudio.co/Open-graph-patterns.png",
   "jobTitle": "Independent Product and Design Consultant",
   "description": "Kedar Nimkar is an independent product and design consultant based in Singapore, helping companies go from 0 to 1 to 10.",
   "address": {
@@ -62,20 +62,21 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0f0f0f;
-    --ink:#ececec;
-    --muted:#a8a39a;
-    --rule:#ffffff1f;
-    --red:#d83a2a;
+    --bg:#2B18D7;
+    --ink:#ffffff;
+    --muted:rgba(255,255,255,.7);
+    --rule:#ffffff2e;
+    --panel:#ffffff14;
+    --accent:#FFA500;
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg)}
   body{
     color:var(--ink);
-    font-family:'Work Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-family:'Anek Latin', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight:600;
     font-size:24px;
     line-height:1.4;
@@ -84,7 +85,7 @@
     -moz-osx-font-smoothing:grayscale;
     text-rendering:optimizeLegibility;
   }
-  ::selection{background:var(--red);color:#fff}
+  ::selection{background:var(--accent);color:#fff}
 
   .wrap{
     max-width:760px;
@@ -95,41 +96,20 @@
   /* Header / identity */
   .id{
     display:flex;
-    align-items:center;
-    gap:20px;
+    flex-direction:column;
+    gap:12px;
     margin-bottom:30px;
     width:100%;
   }
-  .id > div:last-child{flex:1 1 auto;min-width:0}
-  .avatar{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    background:var(--red);
-    flex:0 0 100px;
-    overflow:hidden;
-    position:relative;
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
   }
-  .avatar img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center 18%;
+  .brand .logo{
+    height:55px;
+    width:auto;
     display:block;
-  }
-  .id .name{
-    font-weight:500;
-    font-size:26px;
-    line-height:1.15;
-    letter-spacing:-.015em;
-  }
-  .id .tag{
-    color:var(--muted);
-    font-size:22px;
-    font-weight:600;
-    line-height:1.3;
-    margin-top:4px;
-    letter-spacing:-.01em;
   }
 
   /* Section title (non-accordion heading, matches accordion summary type) */
@@ -162,7 +142,7 @@
     flex-wrap:wrap;
     gap:14px 28px;
     align-items:center;
-    background:#181818;
+    background:var(--panel);
     border-radius:10px;
     padding:16px 22px;
     margin:0 -18px 40px;
@@ -178,7 +158,7 @@
     letter-spacing:-.005em;
   }
   nav.quicklinks a:hover{
-    text-decoration-color:var(--red);
+    text-decoration-color:var(--accent);
     color:#fff;
   }
 
@@ -195,36 +175,8 @@
     transition:color .15s ease, text-decoration-color .15s ease;
   }
   a:hover{
-    text-decoration-color:var(--red);
+    text-decoration-color:var(--accent);
     color:#fff;
-  }
-
-  /* Instagram-style gradient text for company links */
-  a.grad{
-    font-weight:800;
-    background-image:linear-gradient(115deg,#ffb199 0%,#ff7a55 25%,#ff4a2e 50%,#ff2d1f 75%,#ff8a6b 100%);
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    color:transparent;
-    text-decoration:none;
-    background-size:300% 300%;
-    background-position:0% 50%;
-    animation:gradShift 7s ease-in-out infinite;
-    transition:filter .2s ease;
-    position:relative;
-  }
-  a.grad:hover{
-    filter:brightness(1.12) saturate(1.2);
-    animation-duration:3.5s;
-  }
-  @keyframes gradShift{
-    0%   {background-position:0% 50%}
-    50%  {background-position:100% 50%}
-    100% {background-position:0% 50%}
-  }
-  @media (prefers-reduced-motion: reduce){
-    a.grad{animation:none}
   }
 
   hr{
@@ -242,7 +194,7 @@
     transition:background-color .25s ease;
   }
   details[open]{
-    background:#181818;
+    background:var(--panel);
     padding-bottom:18px;
   }
   details summary{
@@ -352,13 +304,12 @@
     font-size:16px;
     line-height:1.6;
     font-weight:300;
-    color:rgba(236,236,236,.7);
+    color:var(--muted);
     letter-spacing:0;
   }
   .site-foot hr{margin:0 0 20px}
-  .site-foot .meaning{margin-bottom:20px}
   .site-foot a{
-    color:rgba(236,236,236,.7);
+    color:var(--muted);
     text-decoration:none;
   }
   .site-foot a:hover{
@@ -366,14 +317,24 @@
     text-underline-offset:3px;
     color:#fff;
   }
+  .foot-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .li-icon{
+    display:flex;
+    flex:0 0 auto;
+    color:var(--muted);
+  }
+  .li-icon:hover{color:#fff}
 
   @media (max-width:640px){
     .wrap{padding:48px 22px 96px}
     body{font-size:20px;line-height:1.4}
-    .id{gap:16px;margin-bottom:24px}
-    .avatar{width:60px;height:60px;flex-basis:60px}
-    .id .name{font-size:21px}
-    .id .tag{font-size:18px}
+    .id{gap:10px;margin-bottom:24px}
+    .brand .logo{height:40px}
     details summary{font-size:20px;gap:14px}
     details summary .icon{width:20px;height:20px;flex-basis:20px}
     details ul li{font-size:20px;padding:8px 0}
@@ -393,24 +354,13 @@
   <main class="wrap">
 
     <header class="id">
-      <div class="avatar">
-        <img src="kedar.png" alt="Kedar Nimkar" />
-      </div>
-      <div>
-        <div class="name">Kedar Nimkar</div>
-        <div class="tag">AI creates options. I Curate.</div>
+      <div class="brand">
+        <img class="logo" src="patterns-logo.svg" alt="Patterns Studio" />
       </div>
     </header>
 
-    <nav class="quicklinks" aria-label="Elsewhere">
-      <a href="https://nimkarkedar.com" target="_blank" rel="noopener noreferrer">nimkarkedar.com</a>
-      <a href="https://www.linkedin.com/in/nimkarkedar/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-      <a class="hide-mobile" href="https://www.thegyaanproject.com/" target="_blank" rel="noopener noreferrer">The Gyaan Project</a>
-      <a href="https://drive.google.com/file/d/1G2TtF_ZkS-k_wprtESznQ3OG7KBJe-w_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-    </nav>
-
     <p class="intro">
-      Hello. I’m Kedar in <a href="https://en.wiktionary.org/wiki/%E0%A4%A7%E0%A4%AE%E0%A4%BE%E0%A4%95%E0%A5%87%E0%A4%A6%E0%A4%BE%E0%A4%B0" target="_blank" rel="noopener noreferrer">dhamaKedar</a>. I love building software.
+      Welcome to Patterns. I, Kedar Nimkar, design digital experiences to solve business problems.
     </p>
 
     <hr/>
@@ -435,11 +385,11 @@
     </p>
 
     <p>
-      I’ve led teams at <a class="grad" href="https://www.cleartrip.com" target="_blank" rel="noopener noreferrer">Cleartrip</a>, <a class="grad" href="https://in.bookmyshow.com" target="_blank" rel="noopener noreferrer">BookMyShow</a>, <a class="grad" href="https://jupiter.money" target="_blank" rel="noopener noreferrer">Jupiter</a>, and <a class="grad" href="https://www.propertyguru.com.sg" target="_blank" rel="noopener noreferrer">PropertyGuru</a> in Singapore.
+      I’ve led teams at <a href="https://www.cleartrip.com" target="_blank" rel="noopener noreferrer">Cleartrip</a>, <a href="https://in.bookmyshow.com" target="_blank" rel="noopener noreferrer">BookMyShow</a>, <a href="https://jupiter.money" target="_blank" rel="noopener noreferrer">Jupiter</a>, and <a href="https://www.propertyguru.com.sg" target="_blank" rel="noopener noreferrer">PropertyGuru</a> in Singapore.
     </p>
 
     <p>
-      I am a mentor for startups at National University of Singapore for <a class="grad" href="https://enterprise.nus.edu.sg/supporting-entrepreneurs/block71-global-incubation/" target="_blank" rel="noopener noreferrer">BLOCK71</a> and a knowledge partner for <a class="grad" href="https://www.indiafutureslab.com/getting-started" target="_blank" rel="noopener noreferrer">India Futures Lab</a>, a micro-university based in Goa.
+      I am a mentor for startups at National University of Singapore for <a href="https://enterprise.nus.edu.sg/supporting-entrepreneurs/block71-global-incubation/" target="_blank" rel="noopener noreferrer">BLOCK71</a> and a knowledge partner for <a href="https://www.indiafutureslab.com/getting-started" target="_blank" rel="noopener noreferrer">India Futures Lab</a>, a micro-university based in Goa.
     </p>
 
     <p>
@@ -537,19 +487,16 @@
     </p>
 
     <p class="closing">
-      You can explore all my work at <a href="https://nimkarkedar.com" target="_blank" rel="noopener noreferrer">nimkarkedar.com</a>. <a href="mailto:kedarnimkar@gmail.com?subject=Got%20work">Let’s connect</a> if the vibe matches.
+      You can explore all my work at <a href="https://nimkarkedar.com" target="_blank" rel="noopener noreferrer">nimkarkedar.com</a>. <a href="mailto:kedar@patternsstudio.co?subject=Got%20work">Let’s connect</a> if the vibe matches.
     </p>
 
     <footer class="site-foot">
       <hr/>
-      <div class="meaning">“Dhamakedar” (धमाकेदार) is a Hindi/Urdu adjective meaning explosive, spectacular, sensational, or highly impactful.</div>
-      <div>© 2026 Kedar Nimkar | Singapore</div>
-      <div>
-        <a href="https://nimkarkedar.com" target="_blank" rel="noopener noreferrer">nimkarkedar.com</a> |
-        <a href="https://thegyaanproject.com" target="_blank" rel="noopener noreferrer">thegyaanproject.com</a> |
-        <a href="https://asktgp.com" target="_blank" rel="noopener noreferrer">asktgp.com</a> |
-        <a href="https://www.linkedin.com/in/nimkarkedar/" target="_blank" rel="noopener noreferrer">Linkedin</a> |
-        <a href="https://www.youtube.com/@thegyaanproject" target="_blank" rel="noopener noreferrer">Youtube</a>
+      <div class="foot-row">
+        <span>© 2026 Patterns Studio PTE LTD | Singapore</span>
+        <a class="li-icon" href="https://www.linkedin.com/in/nimkarkedar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.94v5.666H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+        </a>
       </div>
     </footer>
 
