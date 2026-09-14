@@ -330,6 +330,40 @@
   }
   .li-icon:hover{color:#fff}
 
+  /* Logo marquee */
+  .logo-scroll{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    margin:40px 0;
+    -webkit-mask-image:linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image:linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  }
+  .logo-track{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    width:max-content;
+    animation:logo-scroll 60s linear infinite;
+    will-change:transform;
+  }
+  .logo-scroll:hover .logo-track{animation-play-state:paused}
+  .logo-track img{
+    height:52px;
+    width:auto;
+    flex:0 0 auto;
+    display:block;
+    user-select:none;
+    -webkit-user-drag:none;
+  }
+  @keyframes logo-scroll{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .logo-track{animation:none}
+  }
+
   @media (max-width:640px){
     .wrap{padding:48px 22px 96px}
     body{font-size:20px;line-height:1.4}
@@ -347,6 +381,8 @@
     nav.quicklinks a.hide-mobile{display:none}
     p{margin-bottom:26px}
     hr{margin:10px 0}
+    .logo-track{gap:28px}
+    .logo-track img{height:36px}
   }
 </style>
 </head>
@@ -360,8 +396,51 @@
     </header>
 
     <p class="intro">
-      Welcome to Patterns. I, Kedar Nimkar, design digital experiences to solve business problems.
+      I build high-taste software to delight users and drive business growth.
     </p>
+
+    <div class="logo-scroll" role="img" aria-label="Logos of companies I've worked with: Cleartrip, Government of India, Jupiter, Legends of India, Lumosity, Myopal, Neufin Energy, NH8 Films, Omnicuris, Practo, Prithvi Theatre, PropertyGuru, Quant, Samwoh, Sleek, Surge, The Gyaan Project, Vipassana Meditation App, Zipdial">
+      <div class="logo-track">
+        <img src="work-assets/cleartrip-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/government-of-india-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/jupiter-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/legends-of-india-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/lumosity-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/myopal-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/neufin-energy-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/nh8-films-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/omnicuris-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/practo-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/prithvi-theatre-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/propertyguru-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/quant-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/samwoh-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/sleek-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/surge-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/the-gyaan-project-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/vipassana-meditation-app-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/zipdial-logo.png" alt="" loading="lazy" />
+        <img src="work-assets/cleartrip-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/government-of-india-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/jupiter-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/legends-of-india-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/lumosity-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/myopal-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/neufin-energy-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/nh8-films-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/omnicuris-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/practo-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/prithvi-theatre-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/propertyguru-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/quant-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/samwoh-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/sleek-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/surge-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/the-gyaan-project-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/vipassana-meditation-app-logo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="work-assets/zipdial-logo.png" alt="" aria-hidden="true" loading="lazy" />
+      </div>
+    </div>
 
     <hr/>
 
